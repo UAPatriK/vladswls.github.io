@@ -1,0 +1,770 @@
+/*
+Theme name: Vladswls theme
+Theme URI: http://vladswls.com
+Description: Theme-portfolio for front-end developer
+Version: 0.01
+Author: Vladyslav Vlasov
+Author URI: https://www.linkedin.com/in/vladswls/
+Tags: front-end, UI/UX, developer, portfolio
+ */
+
+
+/* Links */
+a,
+a:focus,
+a:hover {
+ font-family: 'Oswald', sans-serif;
+ font-size: 48px;
+ font-weight: 300;
+ color:#000;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  /*text-decoration: none;*/
+  color: #0085FF;
+}
+
+
+
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  }
+body {
+  color: #000;
+
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: 700;
+
+
+  color: rgba(255, 255, 255, .75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+
+
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255, 255, 255, .5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  .site-wrapper-inner {
+    vertical-align: middle; /* Start the vertical centering */
+  }
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    max-width: 1200px;
+  }
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('MyriadPro-Regular.eot');
+  src: local('Myriad Pro Regular'), local('MyriadPro-Regular'),
+    url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('MyriadPro-Regular.woff') format('woff'),
+    url('MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+    font-family: 'Myriad Pro';
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+.footer {
+  background-color: #0085FF;
+  height: 330px;
+}
+
+.footer p{
+  color: #fff;
+  /* THANKS FOR WATCHING */
+
+
+ font-family: 'Oswald', sans-serif;
+margin-top: 230px;
+font-weight: 250;
+font-size: 24px;
+
+
+}
+
+
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 0px !important;
+  border-right: 0px !important;
+
+}
+
+.gradient-border {
+  /*content: '';*/
+  /*display: block;*/
+  /*position: absolute;*/
+  /*top: calc(-2 * var(--borderWidth));*/
+  /*left: calc(-1 * var(--borderWidth));*/
+/*  height: 100%;
+  width: 100%;*/
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  /*border-radius: calc(2 * var(--borderWidth));*/
+  z-index: -99999999;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.navbar-default {
+  /*background: #fff;*/
+  border-bottom:0px;
+  height: auto;
+  margin-bottom: 15px;
+  z-index:9999999 !important;
+  padding-bottom: 10px;
+}
+
+.navbar-default a {
+  font-size: 24px;
+color:#fff !important;
+/*z-index: 999999 ;*/
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+ font-size: 24px;
+ font-weight: 500;
+ color:#000;
+}
+
+
+
+.grid {
+	position: relative;
+	margin: 0 auto;
+	/*padding: 1em 0 4em;*/
+
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	/*margin: 10px 1%;*/
+	/*min-width: 320px;*/
+	/*max-width: 480px;*/
+	max-height: 360px;
+	/*width: 48%;*/
+
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+  margin:0 auto !important;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #000;
+
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	/*text-indent: 200%;*/
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+
+}
+
+.grid figure h2 {
+	/*word-spacing: -0.15em;*/
+	font-weight: 300;
+   background-color: #fff;
+   padding-bottom: 5px;
+   padding-top: 3px;
+   padding-left: 2px;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Individual effects */
+
+/*---------------*/
+/***** Lily *****/
+/*---------------*/
+
+figure.effect-lily img {
+	max-width: none;
+	width: -webkit-calc(100% + 30px);
+	width: calc(100% + 30px);
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-20px,0, 0);
+	transform: translate3d(-20px,0,0);
+
+}
+
+figure.effect-lily figcaption {
+	text-align: left;
+}
+
+figure.effect-lily figcaption > div {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	height: 50%;
+}
+
+figure.effect-lily h2,
+figure.effect-lily p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-lily h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-lily p {
+	color: rgba(0,0,0,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+	opacity: 0.3;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover h2,
+figure.effect-lily:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-lily:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
+
+
+
+
+
+
+
+.webpage {
+  border-radius: 1em;
+  border: 2em solid #fff;
+  background: #DADADA;
+  background: #DADADA url('/wp-content/uploads/2019/10/jardineria_loaiza_design.png') no-repeat top left;
+  background-size: 100% auto;
+  /*width:100%;*/
+  height: 500px;
+  max-height: 500px;
+  display: block;
+  position: relative;
+
+  /*transform: translate(-50%, -50%);*/
+  animation: scroll 12s infinite cubic-bezier(.52, -0.39, .3, 1.43);
+}
+
+
+
+@keyframes scroll {
+  0%,
+  10% {
+    background-position: 0 0;
+  }
+  20%,
+  30% {
+    background-position: 0 -22em;
+  }
+  50%,
+  60% {
+    background-position: 0 -50em;
+  }
+  90%,
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.hover-message {
+  font-family: 'Myraid Pro';
+  background: rgba(0, 0, 0, 0.7);
+  border-radius:15px;
+  position: absolute;
+  /*top: 4em;*/
+  right: 0.5em;
+  bottom: 0.5em;
+  padding-left: 10px; padding-right: 10px;
+  padding-top: 10px;
+  /*left: 4em;*/
+  /*line-height: 1.75em;*/
+  font-size: 2em;
+  font-family: sans-serif;
+  color: #fff;
+  text-align: center;
+  opacity:0;
+  transition:all 0.2s ease-out;
+  transform:translateY(0.8em);
+}
+.webpage:hover {
+  animation-play-state: paused;
+}
+.webpage:hover .hover-message{
+  opacity: 1;
+  transform:none;
+}
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) { 
+
+.mrt_text {
+  margin-top: 140px;
+}
+
+.mrt_about {
+  margin-top: 60px;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+ font-family: 'Oswald', sans-serif;
+ font-size: 24px;
+ font-weight: 300;
+ color:#000;
+}
+
+.pd_text {
+  padding-left: 0px;
+}
+
+h1 {
+   font-family: 'Oswald', sans-serif;
+ font-size: 32px;
+  font-weight: 700;
+}
+
+.mrt0 {
+  margin-left: 0px;
+}
+
+h2 {
+   font-family: 'Oswald', sans-serif;
+ font-size: 16px;
+  font-weight: 300;
+}
+
+.mrt_image {
+  margin-top: 100px;
+}
+
+
+
+h1.block_sign {
+   font-family: 'Oswald', sans-serif;
+ font-size: 32px;
+ font-weight: 300;
+ color:#000;
+}
+
+.mrt_left {
+  margin-left: 20px;
+}
+
+
+ }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+.mrt_text {
+  margin-top: 140px;
+}
+
+.mrt_about {
+  margin-top: 0px;
+}
+
+.mrt_image {
+  margin-top: 100px;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+ font-family: 'Oswald', sans-serif;
+ font-size: 32px;
+ font-weight: 300;
+ color:#000;
+}
+
+.pd_text {
+  padding-left: 60px;
+}
+
+h1 {
+   font-family: 'Oswald', sans-serif;
+ font-size: 48px;
+  font-weight: 700;
+}
+
+
+
+h1.block_sign {
+   font-family: 'Oswald', sans-serif;
+ font-size: 48px;
+ font-weight: 300;
+ color:#000;
+}
+
+
+.mrt0 {
+  margin-left: 0px;
+}
+
+h2 {
+   font-family: 'Oswald', sans-serif;
+ font-size: 24px;
+  font-weight: 300;
+}
+
+
+.mrt_left {
+  margin-left: 20px;
+}
+
+
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+.mrt_text {
+  margin-top: 60px;
+}
+
+.mrt_about {
+  margin-top: 0px;
+}
+
+.mrt_image {
+  margin-top: 0px;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+ font-family: 'Oswald', sans-serif;
+ font-size: 36px;
+ font-weight: 300;
+ color:#000;
+}
+
+.pd_text {
+  padding-left: 60px;
+}
+
+h1 {
+   font-family: 'Oswald', sans-serif;
+ font-size: 48px;
+  font-weight: 700;
+}
+
+
+
+h1.block_sign {
+   font-family: 'Oswald', sans-serif;
+ font-size: 48px;
+ font-weight: 300;
+ color:#000;
+}
+
+
+.mrt0 {
+  margin-left: 40px;
+}
+
+h2 {
+   font-family: 'Oswald', sans-serif;
+ font-size: 24px;
+  font-weight: 300;
+}
+
+
+.mrt_left {
+  margin-left: 40px;
+}
+
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+.mrt_text {
+  margin-top: 140px;
+}
+
+.mrt_image {
+  margin-top: 0px;
+}
+
+.mrt_about {
+  margin-top: 0px;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+ font-family: 'Oswald', sans-serif;
+ font-size: 48px;
+ font-weight: 300;
+ color:#000;
+}
+
+.pd_text {
+  padding-left: 60px;
+}
+
+h1 {
+   font-family: 'Oswald', sans-serif;
+ font-size: 48px;
+  font-weight: 700;
+}
+
+.mrt0 {
+  margin-left: 40px;
+}
+
+h2 {
+   font-family: 'Oswald', sans-serif;
+ font-size: 24px;
+  font-weight: 300;
+}
+
+
+
+h1.block_sign {
+   font-family: 'Oswald', sans-serif;
+ font-size: 48px;
+ font-weight: 300;
+ color:#000;
+}
+
+.mrt_left {
+  margin-left: 40px;
+}
+
+
+ }
+
+
+
+.navbar-toggle {
+  margin-top: 15px;
+}
+
+.collapse {
+  display: block !important;
+}
