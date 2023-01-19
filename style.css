@@ -181,18 +181,14 @@ body {
 }
 
 @font-face {
-  font-family: 'Myriad Pro';
-  src: url('MyriadPro-Regular.eot');
-  src: local('Myriad Pro Regular'), local('MyriadPro-Regular'),
-    url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-    url('MyriadPro-Regular.woff') format('woff'),
-    url('MyriadPro-Regular.ttf') format('truetype');
+  font-family: 'Lato', sans-serif;
+
   font-weight: normal;
   font-style: normal;
 }
 
 p {
-    font-family: 'Myriad Pro';
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     line-height: 1.8;
 }
